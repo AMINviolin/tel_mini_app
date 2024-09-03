@@ -5,21 +5,21 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #92f2ff; /* Light blue background */
+    background: #d9ff02; /* Light blue background */
     font-family: 'Arial', sans-serif;
 }
 
 .container {
     text-align: center;
-    background: #97f5ff; /* White background for the content area */
+    background: #88ff00; /* White background for the content area */
     border-radius: 15px; /* Rounded corners */
     padding: 20px;
-    box-shadow: 0 8px 16px rgba(255, 213, 3, 0.975); /* Subtle shadow */
+    box-shadow: 0 8px 16px rgba(187, 13, 144, 0.975); /* Subtle shadow */
 }
 
 .header h1 {
     font-size: 4rem;
-    color: #00796b; /* Teal color */
+    color: #3300ff; /* Teal color */
     position: relative;
     display: inline-block;
     animation: fadeIn 2s ease-in-out;
@@ -28,7 +28,7 @@ body {
 
 .header .star {
     font-size: 2rem;
-    color: gold;
+    color: rgb(255, 0, 0);
     margin-left: 10px;
 }
 
@@ -44,26 +44,26 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     animation: bounce 2s infinite;
     border-radius: 50%; /* Circular coin */
-    box-shadow: 0 4px 8px rgba(159, 255, 135, 0.791); /* 3D effect */
+    box-shadow: 0 4px 8px rgba(255, 64, 5, 0.791); /* 3D effect */
 }
 
 .coin:hover {
     transform: scale(1.1);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Increased shadow on hover */
+    box-shadow: 0 6px 12px rgb(83, 3, 83); /* Increased shadow on hover */
 }
 
 .balance {
     font-size: 4rem;
-    color: #00796b;
+    color: #00ffe1;
     margin-top: 10px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #ffffff;
+    background: #ff8c00;
     border-radius: 5px;
     padding: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgb(1, 82, 13);
 }
 
 /* Animations */

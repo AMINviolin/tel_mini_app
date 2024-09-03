@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #92f2ff; /* Light blue background */
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+    background: #97f5ff; /* White background for the content area */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(255, 213, 3, 0.975); /* Subtle shadow */
+}
+
+.header h1 {
+    font-size: 4rem;
+    color: #00796b; /* Teal color */
+    position: relative;
+    display: inline-block;
+    animation: fadeIn 2s ease-in-out;
+    margin: 0; /* Remove default margin */
+}
+
+.header .star {
+    font-size: 2rem;
+    color: gold;
+    margin-left: 10px;
+}
+
+.coin-wrapper {
+    margin-top: 5px;
+    position: relative;
+}
+
+.coin {
+    width: 10px; /* Size reduced to 1/5 of original (150px) */
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: bounce 2s infinite;
+    border-radius: 50%; /* Circular coin */
+    box-shadow: 0 4px 8px rgba(159, 255, 135, 0.791); /* 3D effect */
+}
+
+.coin:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Increased shadow on hover */
+}
+
+.balance {
+    font-size: 4rem;
+    color: #00796b;
+    margin-top: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
